@@ -116,3 +116,17 @@ body {
 .wind {
     margin-right: 20px;
 }
+
+.humd-i {
+    font-size: 36px;
+}
+
+.wether-deatails .text {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
