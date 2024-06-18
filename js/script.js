@@ -1,6 +1,6 @@
 const inpBox = document.querySelector(".input-box");
 const searchBtn = document.querySelector("#searchBtn");
-const weather_img = document.querySelector(".weather-img");
+const weatherImg = document.querySelector(".weather-img");
 const temprature = document.querySelector(".temperature");
 const description = document.querySelector(".discription");
 const humidity = document.querySelector("#humidity-text");
@@ -18,7 +18,24 @@ async function checkWeather(city) {
     humidity.innerHTML = `${weatherData.main.humidity}%`;
     windSpeed.innerHTML = `${weatherData.wind.speed}Km/h`;
 
-    
+
+    switch (weatherData.weather[0].main) {
+        case 'Clouds':
+            weatherImg.src = "/assets/cloud.png";
+            break;
+        case 'Clear':
+            weatherImg.src = "/assets/clear.png";
+            break;
+        case 'Rain':
+            weatherImg.src = "/assets/rain.png";
+            break;
+        case 'Mist':
+            weatherImg.src = "/assets/mist.png";
+            break;
+        case 'Snow':
+            weatherImg.src = "/assets/snow.png";
+            break;
+    }
 
     console.log(weatherData);
 
