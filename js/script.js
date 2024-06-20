@@ -44,11 +44,6 @@ async function checkWeather(city) {
             weatherImg.src = "assets/snow.png";
             break;
     }
-
-
-
-    console.log(weatherData);
-
 }
 
 

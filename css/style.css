@@ -149,3 +149,65 @@ body {
 .location-not-found img {
     width: 80%;
 }
+
+
+
+/* responsive  */
+
+
+@media only screen and (max-width: 400px) {
+    .wrapper {
+        width: 375px;
+    }
+}
+
+
+    
+@media only screen and (max-width: 320px) {
+
+    .wrapper {
+        width: 300px;
+    }
+
+    .search-box input {
+        width: 75%;
+        font-size: 17px;
+        padding: 10px 12px;
+    }
+
+    .weather-body {
+        margin: 0;
+    }
+
+    .temperature {
+        font-size: 35px;
+    }
+
+    .discription {
+        font-size: 18px;
+    }
+
+    .wether-deatails {
+        margin-top: 10px;
+    }
+
+    .humidity {
+        margin-left: 8px;
+    }
+
+    .wind {
+        margin-right: 8px;
+    }
+
+    .text span {
+        font-size: 18px;
+    }
+
+    .wether-deatails .text {
+        font-size: 15px;
+    }
+
+    .humd-i {
+        font-size: 28px;
+    }
+}
